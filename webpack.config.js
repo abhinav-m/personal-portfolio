@@ -18,6 +18,8 @@ module.exports = {
       }
     ]
   },
+  // Emit source maps so we can debug our code in the browser
+  devtool: "source-map",
   resolve: {
     extensions: [".js", ".jsx"]
   },

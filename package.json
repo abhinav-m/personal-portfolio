@@ -4,7 +4,8 @@
   "description": "A simple boiler plate for react.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "webpack-dev-server --open --mode development",
+    "dev": "webpack --mode development",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
