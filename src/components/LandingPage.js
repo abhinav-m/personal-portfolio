@@ -10,7 +10,7 @@ class LandingPage extends Component {
   render() {
     const url = "https://s9.postimg.org/6pc2xr49r/display-pic.jpg";
     return (
-      <div className="gridContainer">
+      <div className='gridContainer'>
         <Title />
         <ImageBox url={url} />
         <Description />
