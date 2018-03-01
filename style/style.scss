@@ -1,0 +1,95 @@
+@import url("https://use.fontawesome.com/releases/v5.0.7/css/all.css");
+@import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|News+Cycle");
+
+%padding-border-radius {
+  border-radius:10px;
+  padding:10px;
+}
+
+%text-align-center {
+  text-align:center;
+}
+
+body {
+  background:ivory;
+  font-family: 'News Cycle', sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  letter-spacing:2px;
+  @extend %text-align-center;
+}
+
+h1 {
+  color:blue;
+}
+
+h2 {
+  color:cadetblue;
+}
+
+.icons {
+    @extend %text-align-center;
+}
+
+.gridContainer {
+display:grid;
+grid-template-rows:15px 10% 20% 10% 20% 20% 20% 25px;
+grid-template-columns:10% 80% 10%;
+grid-row-gap:25px;
+justify-items:center;
+}
+
+.title {
+  grid-row:2 / 3;
+  grid-column: 2 / 3;
+  background:cornsilk;
+  @extend %padding-border-radius;
+}
+
+.imageBox {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.description {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  background:antiquewhite;
+  @extend %padding-border-radius;
+}
+
+.projects {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+  background:blanchedalmond;
+  @extend %padding-border-radius;
+}
+
+.techStack {
+  grid-row: 6 / 7;
+  grid-column: 2 / 3;
+  @extend %padding-border-radius;
+  background:bisque;
+}
+
+.socialIcons {
+  grid-row: 7 / 8;
+  grid-column: 2 / 3;
+  @extend %padding-border-radius;
+  background:navajowhite;
+}
+
+p {
+  @extend %text-align-center;
+  letter-spacing:1px;
+  font-size:1.2em;
+}
+
+
+i {
+  margin:10px;
+  font-size:4.5em;
+}
