@@ -3,53 +3,55 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|News+Cycle");
 
 %padding-border-radius {
-  border-radius:10px;
-  padding:10px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 %text-align-center {
-  text-align:center;
+  text-align: center;
 }
 
-%column-2-3{
+%column-2-3 {
   grid-column: 2 / 3;
 }
 
 body {
-  background:ivory;
-  font-family: 'News Cycle', sans-serif;
+  background: ivory;
+  font-family: "News Cycle", sans-serif;
 }
 
-h1,h2,h3 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  letter-spacing:2px;
+h1,
+h2,
+h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 2px;
   @extend %text-align-center;
 }
 
 h1 {
-  color:blue;
+  color: blue;
 }
 
 h2 {
-  color:cadetblue;
+  color: cadetblue;
 }
 
 .icons {
-    @extend %text-align-center;
+  @extend %text-align-center;
 }
 
 .gridContainer {
-display:grid;
-grid-template-rows:15px 10% 20% 10% 20% 20% 20% 25px;
-grid-template-columns:10% 80% 10%;
-grid-row-gap:25px;
-justify-items:center;
+  display: grid;
+  grid-template-rows: 15px 10% 20% 10% 20% 20% 20% 25px;
+  grid-template-columns: 10% 80% 10%;
+  grid-row-gap: 25px;
+  justify-items: center;
 }
 
 .title {
-  grid-row:2 / 3;
+  grid-row: 2 / 3;
   @extend %column-2-3;
-  background:cornsilk;
+  background: cornsilk;
   @extend %padding-border-radius;
 }
 
@@ -61,14 +63,14 @@ justify-items:center;
 .description {
   grid-row: 4 / 5;
   @extend %column-2-3;
-  background:antiquewhite;
+  background: antiquewhite;
   @extend %padding-border-radius;
 }
 
 .projects {
   grid-row: 5 / 6;
   @extend %column-2-3;
-  background:blanchedalmond;
+  background: blanchedalmond;
   @extend %padding-border-radius;
 }
 
@@ -76,25 +78,24 @@ justify-items:center;
   grid-row: 6 / 7;
   @extend %column-2-3;
   @extend %padding-border-radius;
-  background:bisque;
+  background: bisque;
 }
 
 .socialIcons {
   grid-row: 7 / 8;
   @extend %column-2-3;
   @extend %padding-border-radius;
-  background:navajowhite;
+  background: navajowhite;
 }
 
 p {
   @extend %text-align-center;
-  letter-spacing:1px;
-  font-size:1.2em;
+  letter-spacing: 1px;
+  font-size: 1.2em;
 }
 
-
 i {
-  margin:10px;
-  font-size:4.5em;
-  display:inline-block;
+  margin: 10px;
+  font-size: 4.5em;
+  display: inline-block;
 }
