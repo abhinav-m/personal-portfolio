@@ -1,6 +1,6 @@
-@import url("https://use.fontawesome.com/releases/v5.0.7/css/all.css");
-@import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
-@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|News+Cycle");
+@import url('https://use.fontawesome.com/releases/v5.0.7/css/all.css');
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|News+Cycle');
 
 %padding-border-radius {
   border-radius: 10px;
@@ -17,13 +17,13 @@
 
 body {
   background: ivory;
-  font-family: "News Cycle", sans-serif;
+  font-family: 'News Cycle', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   letter-spacing: 2px;
   @extend %text-align-center;
 }
@@ -46,6 +46,33 @@ h2 {
   grid-template-columns: 10% 80% 10%;
   grid-row-gap: 25px;
   justify-items: center;
+}
+
+.portfolio-grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: grey 10px solid;
+}
+
+.portfolio-grid-container div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @extend %text-align-center;
 }
 
 .title {
