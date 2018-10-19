@@ -11,6 +11,11 @@ const projectsDone = [
       'Developed and deployed some of the core features on www.buddy4study.com  a portal which connects scholarships with students'
   },
   {
+    projectName: 'Dungeon crawler game built using React.',
+    projectLink: 'https://react-dungeon-master.herokuapp.com/',
+    dataDescription: 'Dungeon crawler game built using React.js'
+  },
+  {
     projectName: 'Simulation of game of life',
     projectLink: 'https://codepen.io/abhinavthinktank/full/wqEPPN/',
     dataDescription:
@@ -58,6 +63,14 @@ const projectsDone = [
       'Scatter plot graph built on doping in professional bicycle racing'
   }
 ];
+
+var a = 1;
+function b() {
+  //Hoisted
+  function a() {}
+  a = 10;
+  return;
+}
 
 const PortfolioList = props => (
   <div className="portfolio-grid-container">
