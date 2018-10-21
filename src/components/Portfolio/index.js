@@ -1,7 +1,6 @@
 import React from 'react';
 
 import PortfolioCard from './PortfolioCard';
-import { WSAEHOSTUNREACH } from 'constants';
 
 const projectsDone = [
   {
@@ -61,16 +60,15 @@ const projectsDone = [
     projectLink: 'https://codepen.io/abhinavthinktank/pen/XaGQBr',
     dataDescription:
       'Scatter plot graph built on doping in professional bicycle racing'
+  },
+  {
+    projectName:'React - drumkit',
+    projectLink:"https://codepen.io/abhinavthinktank/pen/NOzjQz",
+    dataDescription:"A drumkit built using React.js. "
   }
 ];
 
-var a = 1;
-function b() {
-  //Hoisted
-  function a() {}
-  a = 10;
-  return;
-}
+
 
 const PortfolioList = props => (
   <div className="portfolio-grid-container">

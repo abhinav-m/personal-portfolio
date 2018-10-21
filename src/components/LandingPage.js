@@ -14,7 +14,6 @@ class LandingPage extends Component {
     return (
       <div className="gridContainer">
         <Title />
-        <ImageBox url={url} />
         <Description />
         <Projects />
         <TechSkills />
