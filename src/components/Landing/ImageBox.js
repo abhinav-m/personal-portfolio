@@ -2,7 +2,9 @@ import React from "react";
 
 const ImageBox = props => {
   const style = {
-    maxWidth: "100%"
+    minHeight: "200px",
+    width: "200px",
+    borderRadius: "5px"
   };
 
   return (

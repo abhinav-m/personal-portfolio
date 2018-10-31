@@ -19,11 +19,11 @@ const Contact = () => {
         </a>
 
         <a href="https://github.com/abhinav-m" target="_blank">
-          <i className="fab fa-github-square" />
+          <i style={{ color: "black" }} className="fab fa-github-square" />
         </a>
 
         <a href="https://codepen.io/abhinavthinktank/" target="_blank">
-          <i className="fab fa-codepen" />
+          <i style={{ color: "black" }} className="fab fa-codepen" />
         </a>
       </div>
       <p> {contactInfo}</p>

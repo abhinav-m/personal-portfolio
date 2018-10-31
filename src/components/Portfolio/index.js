@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import PortfolioCard from "./PortfolioCard";
 
@@ -74,13 +74,34 @@ const projectsDone = [
   }
 ];
 
-const PortfolioList = props => (
-  <div className="portfolio-grid-container">
-    <h2>Some of the projects i have worked upon:</h2>
-    {projectsDone.map((project, i) => (
-      <PortfolioCard key={project + i} data={project} />
-    ))}
-  </div>
-);
+class PortfolioList extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  render() {
+    return (
+      <div className="portfolio-grid-container">
+        <h2>Some of the projects i have worked upon:</h2>
+        {projectsDone.map((project, i) => (
+          <PortfolioCard key={project + i} data={project} />
+        ))}
+      </div>
+    );
+  }
+}
+
+// const PortfolioList = props => (
+//   <div className="portfolio-grid-container">
+//     <h2>Some of the projects i have worked upon:</h2>
+//     {projectsDone.map((project, i) => (
+//       <PortfolioCard key={project + i} data={project} />
+//     ))}
+//   </div>
+// );
 
 export default PortfolioList;
